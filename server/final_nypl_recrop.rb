@@ -21,7 +21,7 @@ end
 gif_url = stereo_metadata['aws_url']
 `wget -nc -O /projects/grail/6DOFnb/NYPL_new/#{ARGV[0]}_gif.jpg '#{gif_url}'`
 
-gifName = ARGV[0] + '_gif.jpg'
+gifName = '/projects/grail/6DOFnb/NYPL_new/' + ARGV[0] + '_gif.jpg'
 size = File.size(gifName)
 if size==0 
   # puts image_captures.to_json
