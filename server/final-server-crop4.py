@@ -8,8 +8,8 @@ import numpy as np
 # from Naked.toolshed.shell import execute_rb, muterun_rb
 
 urlmap = {}
-start_id = 1
-end_id = 20000
+start_id = 60000
+end_id = 80000
 PATH = '/projects/grail/6DOFnb/NYPL_new/'
     #sys.argv[1]  # /Users/ying/documents/uw/Junior-quarter4/lab/
                     # /projects/grail/6DOF/dataset_NYPL
