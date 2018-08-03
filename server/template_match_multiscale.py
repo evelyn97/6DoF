@@ -51,10 +51,9 @@ args = vars(ap.parse_args())
 
 # load the image image, convert it to grayscale, and detect edges
 template = cv2.imread(args["template"])
-if template != None:
-	template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
-	template = cv2.Canny(template, 50, 200)
-	(tH, tW) = template.shape[:2]
+template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
+template = cv2.Canny(template, 50, 200)
+(tH, tW) = template.shape[:2]
 
 imagePath = args["image"]
 # load the image, convert it to grayscale, and initialize the
