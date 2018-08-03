@@ -89,7 +89,7 @@ def main():
         #     shutil.rmtree(idDir)
         if len(os.listdir(cropDir + str(id))) == 0:
             shutil.rmtree(cropDir + str(id))
-        
+
         remove1 = PATH + str(id) + '.jpg'
         if os.path.exists(remove1):
             os.remove(remove1)
