@@ -90,9 +90,9 @@ if matching_captures && matching_captures.length > 0
   
   # Dir.chdir "/Users/ying/documents/uw/Junior-quarter4/lab/#{ARGV[0]}"# # change directory
 
-  `convert #{ARGV[0]}_cropped.tif -crop #{cropped_width}x#{cropped_height}+#{x1}+#{y1} +repage /Users/ying/documents/uw/Junior-quarter4/lab/cropped/#{ARGV[0]}/con-imL.png`
+  `convert #{ARGV[0]}_cropped.tif -crop #{cropped_width}x#{cropped_height}+#{x1}+#{y1} +repage /Users/ying/documents/uw/Junior-quarter4/lab/cons/#{ARGV[0]}/con-imL.png`
 
-  `convert #{ARGV[0]}_cropped.tif -crop #{cropped_width}x#{cropped_height}+#{x2}+#{y2} +repage /Users/ying/documents/uw/Junior-quarter4/lab/cropped/#{ARGV[0]}/con-imR.png`
+  `convert #{ARGV[0]}_cropped.tif -crop #{cropped_width}x#{cropped_height}+#{x2}+#{y2} +repage /Users/ying/documents/uw/Junior-quarter4/lab/cons/#{ARGV[0]}/con-imR.png`
 
   $stdout.puts lowres_dims
   $stdout.puts highres_dims
